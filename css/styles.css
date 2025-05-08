@@ -555,24 +555,5 @@ html, body {
   }
 }
 
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero-description {
-    font-size: 0.95rem;
-  }
-
-  .site-header,
-  .site-footer {
-    text-align: center;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 0.95rem;
-  }
-}
 
   
