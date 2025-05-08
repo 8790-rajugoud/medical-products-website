@@ -1,0 +1,512 @@
+/* File: styles.css */
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #f2f6ff, #e6f0ff);
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  .site-header {
+    background: linear-gradient(90deg, #004d99, #3399ff);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .navbar a {
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #ffdd57;
+  }
+  
+  .hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../assets/images/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4); /* semi-dark overlay */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }  
+  
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-button {
+    margin-top: 1.5rem; /* <-- Add this line */
+    padding: 0.75rem 1.5rem;
+    background: #5ca3e9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-subtext {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  .cta-container {
+    margin-top: 2rem; /* This ensures button moves below the text */
+  }
+  
+  
+  .cta-button:hover {
+    background: #012f5e;
+  }
+  
+  .content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Updated product grid for 4-column layout */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-card h2 {
+    font-size: 1.2rem;
+    margin: 0.8rem 0 0.4rem;
+  }
+  
+  .product-card p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-image img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  .request-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to right, #0073e6, #66b3ff);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .request-button:hover {
+    background: linear-gradient(to right, #0059b3, #3399ff);
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #0073e6;
+    display: block;
+    margin-top: 0.5rem;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    padding: 0.75rem;
+    background: #004d99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #003366;
+  }
+  
+  .site-footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f2f2f2;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  /* Additional styles for product detail page */
+
+/* Product detail layout alignment improvements */
+
+.product-detail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: start;
+  }
+  
+  .product-image-large {
+    text-align: center;
+  }
+  
+  .product-image-large img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-description {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-description h2 {
+    margin-bottom: 1rem;
+    color: #004d99;
+  }
+  
+  .contact-form {
+    max-width: 800px;
+    margin: 3rem auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form label {
+    grid-column: span 2;
+    font-weight: 600;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+    grid-column: span 2;
+  }
+  
+  .contact-form button {
+    grid-column: span 2;
+    padding: 0.75rem;
+    background: #004d99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #003366;
+  }
+  
+  /* Additional styles and modifications */
+
+/* Ensure footer sticks to the bottom */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body > main {
+    flex: 1;
+  }
+  
+  .site-footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem;
+    background: #fff7c8;
+    font-size: 0.9rem;
+    color: #120074;
+  }
+  
+  /* Back to Home button styling */
+  .back-home {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.6rem 1.2rem;
+    background: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .back-home:hover {
+    background: #005bb5;
+  }
+  
+  /* Additional hero info */
+  .hero-description {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    color: #ffffff;
+    max-width: 700px;
+  }
+  /* Cart button styling and visual improvements */
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .cart-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cart-button:hover {
+    background: #218838;
+  }
+  
+  .cart-button img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+  }
+  
+  .cart-page {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+  }
+  
+  .cart-item img {
+    max-width: 60px;
+    height: auto;
+    margin-right: 1rem;
+  }
+  
+  .cart-summary {
+    margin-top: 2rem;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  /* Additional button for e-commerce functionality */
+
+/* Darker Add to Cart button styling */
+.product-card .cart-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background: linear-gradient(to right, #e3feff, #e3feff);
+    color: rgb(11, 1, 1);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .product-card .cart-button:hover {
+    background: linear-gradient(to right, #6b8feb, #6b8feb);
+    transform: scale(1.03);
+  }
+  
+  .product-card .cart-icon {
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+  
+  /* Cart page table styling */
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .cart-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .cart-header {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .cart-empty {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    color: #777;
+  }
+  /* Cart button at top right of products page */
+  .go-to-cart {
+    background: linear-gradient(to right, #005e4d, #228b22);
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .go-to-cart:hover {
+    background: linear-gradient(to right, #004537, #1e7c1e);
+    transform: scale(1.03);
+  }
+  

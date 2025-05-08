@@ -1,0 +1,266 @@
+<!-- File: products.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Products - MediCore</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">MediCore</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">My Cart</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Explore Our Medical Products</h1>
+    <div style="display: flex; justify-content: flex-end; margin-bottom: 1rem;">
+        <a href="cart.html" class="go-to-cart">
+          🛒 Go to Cart
+        </a>
+      </div>
+      
+    <div class="product-grid">
+
+      <!-- Repeatable Product Card -->
+      <div class="product-card">
+        <img src="assets/images/paracetomol tablets.png" alt="Tablet Product">
+        <h2>Paracetamol Tablets</h2>
+        <p>Effective pain reliever and fever reducer.</p>
+        <span class="price">₹55 / Strip</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Paracetamol Tablets', 55)">
+          <span class="cart-icon">🛒Add to Cart</span> 
+        </button>
+      </div>
+      
+      <!-- Repeat the above cart button logic for all remaining product cards -->
+      <!-- For example, here's another -->
+      <div class="product-card">
+        <img src="assets/images/Vitamin c syrup.png" alt="Syrup Product">
+        <h2>Vitamin C Syrup</h2>
+        <p>Boosts immunity and overall wellness.</p>
+        <span class="price">₹80 / Bottle</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Vitamin C Syrup', 80)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/First Aid Kit.png" alt="Kit Product">
+        <h2>First Aid Kit</h2>
+        <p>Essential supplies for emergency use.</p>
+        <span class="price">₹250 / Kit</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('First Aid Kit', 250)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/ORS sachet.png" alt="ORS Sachet">
+        <h2>ORS Sachet</h2>
+        <p>Hydration solution for recovery.</p>
+        <span class="price">₹25 / Sachet</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('ORS Sachet', 15)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Mask pack.png" alt="Mask Product">
+        <h2>Disposable Masks</h2>
+        <p>3-layer protective face masks.</p>
+        <span class="price">₹102 / Pack of 50</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Disposable Masks', 150)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Hand Sanitizer.png" alt="Sanitizer">
+        <h2>Hand Sanitizer</h2>
+        <p>Alcohol-based instant germ killer.</p>
+        <span class="price">₹45 / 100ml</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Hand Sanitizer', 45)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Nitrile Gloves.png" alt="Gloves">
+        <h2>Nitrile Gloves</h2>
+        <p>Puncture-resistant and latex-free.</p>
+        <span class="price">₹200 / Box</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Nitrile Gloves', 200)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Digital Thermometer.png" alt="Thermometer">
+        <h2>Digital Thermometer</h2>
+        <p>Quick and accurate temperature reading.</p>
+        <span class="price">₹120 / Piece</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Digital Thermometer', 120)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Steam Inhaler.png" alt="Inhaler">
+        <h2>Steam Inhaler</h2>
+        <p>Relieves nasal congestion and cold symptoms.</p>
+        <span class="price">₹300 / Unit</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Steam Inhaler', 300)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Elastic Bandage.png" alt="Bandage">
+        <h2>Elastic Bandage</h2>
+        <p>Compression and support for injuries.</p>
+        <span class="price">₹35 / Roll</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Elastic Bandage', 35)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Oxygen Can.png" alt="Oxygen Can">
+        <h2>Portable Oxygen Can</h2>
+        <p>Instant oxygen boost during respiratory distress.</p>
+        <span class="price">₹299 / Can</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Portable Oxygen Can', 299)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Face Shield.png" alt="Face Shield">
+        <h2>Face Shield</h2>
+        <p>Transparent shield for full face protection.</p>
+        <span class="price">₹75 / Piece</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Face Shield', 75)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Blood Pressure Monitor.png" alt="BP Monitor">
+        <h2>Blood Pressure Monitor</h2>
+        <p>Track blood pressure at home easily.</p>
+        <span class="price">₹899 / Unit</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Blood Pressure Monitor', 899)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Pulse Oximeter.png" alt="Pulse Oximeter">
+        <h2>Pulse Oximeter</h2>
+        <p>Check oxygen saturation & heart rate.</p>
+        <span class="price">₹499 / Piece</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Pulse Oximeter', 499)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Pain Relief Spray.png" alt="Pain Relief Spray">
+        <h2>Pain Relief Spray</h2>
+        <p>Quick relief for muscle and joint pain.</p>
+        <span class="price">₹110 / Bottle</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Pain Relief Spray', 110)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Cough Lozenges.png" alt="Cough Lozenges">
+        <h2>Cough Lozenges</h2>
+        <p>Soothe sore throat and suppress cough.</p>
+        <span class="price">₹45 / Pack</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Cough Lozenges', 45)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Eye drops.png" alt="Eye Drops">
+        <h2>Lubricating Eye Drops</h2>
+        <p>Relieves dry and irritated eyes.</p>
+        <span class="price">₹65 / Bottle</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Lubricating Eye Drops', 65)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Disinfectant Spray.png" alt="Disinfectant Spray">
+        <h2>Disinfectant Spray</h2>
+        <p>Sanitizes surfaces and kills 99.9% germs.</p>
+        <span class="price">₹160 / Can</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Disinfectant Spray', 160)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Antibiotic Ointment.png" alt="Antibiotic Ointment">
+        <h2>Antibiotic Ointment</h2>
+        <p>Protects and heals minor wounds and cuts.</p>
+        <span class="price">₹70 / Tube</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Antibiotic Ointment', 70)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>
+      
+      <div class="product-card">
+        <img src="assets/images/Cooling Eye Mask.png" alt="Eye Mask">
+        <h2>Cooling Eye Mask</h2>
+        <p>Soothes eye fatigue and puffiness.</p>
+        <span class="price">₹130 / Piece</span>
+        <a href="product-detail.html" class="request-button">Request Info</a>
+        <button class="cart-button" onclick="addToCart('Cooling Eye Mask', 130)">
+          <span class="cart-icon">🛒</span> Add to Cart
+        </button>
+      </div>      
+
+    </div>
+
+    <a href="index.html" class="back-home">← Back to Home</a>
+    <script defer src="js/scripts.js"></script>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy;  2025 MediCare Health Supplies | All rights reserved.</p>
+  </footer>
+</body>
+</html>

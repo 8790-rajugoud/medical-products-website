@@ -1,0 +1,50 @@
+<!-- File: cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - MediCore</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/scripts.js"></script>
+</head>
+<body onload="loadCart()">
+  <header class="site-header">
+    <div class="logo">MediCore</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">My Cart</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1 class="cart-header">My Shopping Cart</h1>
+    
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>S.no</th>
+          <th>Product Name</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Items will be inserted here -->
+      </tbody>
+    </table>
+
+    <p id="cart-total" class="cart-header">Total: ₹0</p>
+    <a href="index.html" class="back-home">← Back to Home</a>
+  </main>
+  <button onclick="clearCart()" class="cart-button" style="margin-top: 1rem;">
+    🗑️ Clear Cart
+  </button>
+  
+  <footer class="site-footer">
+    <p>&copy;  2025 MediCare Health Supplies | All rights reserved.</p>
+  </footer>
+</body>
+</html>
